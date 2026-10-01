@@ -193,13 +193,13 @@ class HybridRetriever:
                        sc.grading, sc.grading_authority,
                        s.source_code, s.title, s.title_ar, s.source_type,
                        s.author, s.author_ar, s.edition,
-                       1 - (sc.embedding <=> :embedding) AS similarity
+                       1 - (sc.embedding <=> :embedding::vector) AS similarity
                 FROM source_chunks sc
                 JOIN sources s ON sc.source_id = s.id
                 WHERE s.status = 'active'
                   AND sc.embedding IS NOT NULL
-                  AND 1 - (sc.embedding <=> :embedding) >= :threshold
-                ORDER BY sc.embedding <=> :embedding
+                  AND 1 - (sc.embedding <=> :embedding::vector) >= :threshold
+                ORDER BY sc.embedding <=> :embedding::vector
                 LIMIT :top_k
             """)
 
@@ -241,6 +241,7 @@ class HybridRetriever:
             return chunks
 
         except Exception as e:
+            await db.rollback()
             logger.error("semantic_search_failed", error=str(e))
             return []
 
@@ -319,6 +320,7 @@ class HybridRetriever:
             return sorted(chunks, key=lambda x: x.bm25_score, reverse=True)[:self.top_k]
 
         except Exception as e:
+            await db.rollback()
             logger.error("lexical_search_failed", error=str(e))
             return []
 
