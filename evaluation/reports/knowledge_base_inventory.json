@@ -1,0 +1,92 @@
+{
+  "inventory_version": "1.0.0",
+  "generated_at": "2026-09-24T14:56:00Z",
+  "knowledge_base_status": "Seed Corpus (Foundation Representative Index)",
+  "total_sources_registered": 6,
+  "active_seed_sources": 3,
+  "sources": [
+    {
+      "source_code": "SRC-001",
+      "title": "القرآن الكريم (المصحف الشريف)",
+      "collection": "القرآن الكريم",
+      "document_count": 1,
+      "chunk_count": 19,
+      "coverage_scope": "Seed Verses (Representative Surahs: Al-Fatihah, Al-Baqarah, Ali 'Imran, Al-Isra, Al-Anbiya, Al-Hujurat, Al-Ikhlas, Al-Falaq, Al-Kawthar, Al-Asr)",
+      "language": "ar",
+      "rwayah": "حفص عن عاصم",
+      "edition": "مصحف المدينة النبوية لطباعة المصحف الشريف",
+      "publisher": "مجمع الملك فهد لطباعة المصحف الشريف",
+      "license": "Public Domain (النص القرآني العام المعتمد)",
+      "provenance": "Madinah Mushaf Standard Digital Text, verified against canonical Uthmanic orthography",
+      "metadata_completeness_pct": 100.0,
+      "file_path": "knowledge-base/data/quran/seed_verses.json",
+      "file_sha256": "4d33697878721cc742aeb0498eb10344d5cbe96b3a322c366eec682c3c69ce00"
+    },
+    {
+      "source_code": "SRC-002",
+      "title": "صحيح البخاري (الجامع المسند الصحيح المختصر)",
+      "collection": "كتب الحديث التسعة",
+      "document_count": 1,
+      "chunk_count": 8,
+      "coverage_scope": "Seed Hadiths (#1, #8, #10, #13, #69, #2697, #6018, #6406)",
+      "language": "ar",
+      "author": "محمد بن إسماعيل البخاري (ت 256 هـ)",
+      "edition": "الطبعة السلطانية (المطبعة الكبرى الأميرية ببولاق)",
+      "publisher": "تحقيق جماعة من العلماء",
+      "license": "Public Domain (Heritage Text)",
+      "provenance": "Darussalam / Shamela verified hadith numbering with authenticated sanad and matn",
+      "metadata_completeness_pct": 100.0,
+      "file_path": "knowledge-base/data/hadith/seed_hadiths.json",
+      "file_sha256": "431567636acb5829623e8006e00b65f7c32bf28a8d0a2f4a47814b7ec837da95"
+    },
+    {
+      "source_code": "SRC-003",
+      "title": "صحيح مسلم (المسند الصحيح المختصر بنقل العدل عن العدل)",
+      "collection": "كتب الحديث التسعة",
+      "document_count": 1,
+      "chunk_count": 2,
+      "coverage_scope": "Seed Hadiths (#55 الدين النصيحة, #223 الطهور شطر الإيمان)",
+      "language": "ar",
+      "author": "مسلم بن الحجاج النيسابوري (ت 261 هـ)",
+      "edition": "طبعة دار إحياء التراث العربي - بيروت",
+      "publisher": "تحقيق محمد فؤاد عبد الباقي",
+      "license": "Public Domain (Heritage Text)",
+      "provenance": "Verified Sahih Muslim numbering and matn",
+      "metadata_completeness_pct": 100.0,
+      "file_path": "knowledge-base/data/hadith/seed_hadiths.json",
+      "file_sha256": "431567636acb5829623e8006e00b65f7c32bf28a8d0a2f4a47814b7ec837da95"
+    },
+    {
+      "source_code": "SRC-006",
+      "title": "الأربعون النووية",
+      "collection": "المتون الحديثية المعتمدة",
+      "document_count": 1,
+      "chunk_count": 2,
+      "coverage_scope": "Seed Hadiths (#12 من حسن إسلام المرء, #32 لا ضرر ولا ضرار)",
+      "language": "ar",
+      "author": "يحيى بن شرف النووي (ت 676 هـ)",
+      "edition": "دار المنهاج - جدة",
+      "publisher": "تحقيق د. قصي الحلاق",
+      "license": "Public Domain (Heritage Text)",
+      "provenance": "Standard 40 Hadith collection with Nawawi's scholarly gradings recorded",
+      "metadata_completeness_pct": 100.0,
+      "file_path": "knowledge-base/data/hadith/seed_hadiths.json",
+      "file_sha256": "431567636acb5829623e8006e00b65f7c32bf28a8d0a2f4a47814b7ec837da95"
+    }
+  ],
+  "registered_future_sources": [
+    {
+      "source_code": "SRC-004",
+      "title": "سنن أبي داود",
+      "author": "سليمان بن الأشعث السجستاني",
+      "status": "pending_ingestion_pipeline"
+    },
+    {
+      "source_code": "SRC-005",
+      "title": "جامع الترمذي",
+      "author": "محمد بن عيسى الترمذي",
+      "status": "pending_ingestion_pipeline"
+    }
+  ],
+  "disclaimer": "The current deployment indexes a high-precision, representative Seed Corpus. It does NOT claim to contain the entire millions-of-narrations classical heritage. Full ingestion pipeline is executable via apps/api/scripts/ingest_sources.py."
+}

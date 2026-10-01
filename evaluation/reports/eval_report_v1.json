@@ -1,0 +1,271 @@
+{
+  "timestamp": "2026-09-25 17:11:25",
+  "suite": "v1",
+  "total_test_cases": 15,
+  "musnad_passed": 13,
+  "musnad_accuracy_pct": 86.67,
+  "baseline_a_passed": 9,
+  "baseline_a_accuracy_pct": 60.0,
+  "baseline_b_passed": 11,
+  "baseline_b_accuracy_pct": 73.33,
+  "musnad_abstention_rate_pct": 100.0,
+  "total_duration_seconds": 0.072,
+  "avg_latency_ms": 4.8,
+  "results": [
+    {
+      "id": "TC-001",
+      "name": "Quran Al-Ikhlas Exact Match",
+      "category": "quran_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 4,
+      "explanation": "تم التحقق بنجاح من نص الآية الكريمة بمطابقة تامة مع المصحف الشريف (سورة الإخلاص - آية 1).",
+      "rules_triggered": [
+        "RULE_EXACT_QURAN_MATCH"
+      ]
+    },
+    {
+      "id": "TC-002",
+      "name": "Hadith Al-A'malu bin-Niyyat Exact Match",
+      "category": "hadith_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم التحقق من الحديث الشريف بمطابقة تامة في صحيح البخاري - رقم 1 (الحكم: صحيح).",
+      "rules_triggered": [
+        "RULE_EXACT_HADITH_MATCH"
+      ]
+    },
+    {
+      "id": "TC-003",
+      "name": "Hadith La Yu'minu Ahadukum",
+      "category": "hadith_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم التحقق من الحديث الشريف بمطابقة تامة في صحيح البخاري - رقم 13 (الحكم: صحيح).",
+      "rules_triggered": [
+        "RULE_EXACT_HADITH_MATCH"
+      ]
+    },
+    {
+      "id": "TC-004",
+      "name": "Hadith Ad-Deenu An-Naseehah",
+      "category": "hadith_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم العثور على شواهد نصية قوية تسند الادعاء من المصادر المعتمدة.",
+      "rules_triggered": [
+        "RULE_HIGH_SEMANTIC_SUPPORT"
+      ]
+    },
+    {
+      "id": "TC-005",
+      "name": "Hadith Min Husni Islam Al-Mar'",
+      "category": "hadith_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم التحقق من الحديث الشريف بمطابقة تامة في الأربعون النووية - رقم 12 (الحكم: حسن).",
+      "rules_triggered": [
+        "RULE_EXACT_HADITH_MATCH"
+      ]
+    },
+    {
+      "id": "TC-006",
+      "name": "Hadith La Darara wa La Dirar",
+      "category": "hadith_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم العثور على شواهد نصية قوية تسند الادعاء من المصادر المعتمدة.",
+      "rules_triggered": [
+        "RULE_HIGH_SEMANTIC_SUPPORT"
+      ]
+    },
+    {
+      "id": "TC-007",
+      "name": "Fabricated Hadith Claim (Abstention)",
+      "category": "unsupported_claim",
+      "expected_status": "insufficient_evidence",
+      "musnad_status": "insufficient_evidence",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": true,
+      "retrieval_count": 0,
+      "explanation": "لم نتمكن من إثبات هذا الادعاء من المصادر المتاحة للنظام. هذا لا يعني بالضرورة أن الادعاء خاطئ. يوصى بمراجعته من مختص.",
+      "rules_triggered": [
+        "RULE_NO_EVIDENCE_RETRIEVED"
+      ]
+    },
+    {
+      "id": "TC-008",
+      "name": "Spurious Islamic Proverb Claim",
+      "category": "unsupported_claim",
+      "expected_status": "insufficient_evidence",
+      "musnad_status": "insufficient_evidence",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": true,
+      "retrieval_count": 0,
+      "explanation": "لم نتمكن من إثبات هذا الادعاء من المصادر المتاحة للنظام. هذا لا يعني بالضرورة أن الادعاء خاطئ. يوصى بمراجعته من مختص.",
+      "rules_triggered": [
+        "RULE_NO_EVIDENCE_RETRIEVED"
+      ]
+    },
+    {
+      "id": "TC-009",
+      "name": "Fiqh Ruling on Cryptocurrency (Specialist Referral)",
+      "category": "fiqh_specialist_referral",
+      "expected_status": "specialist_referral",
+      "musnad_status": "specialist_referral",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": false,
+      "retrieval_count": 0,
+      "explanation": "هذا الادعاء يتعلق بحكم فقهي أو مسألة اجتهادية دقيقة تتطلب الرجوع للمفتين والمختصين الشرعيين.",
+      "rules_triggered": [
+        "RULE_SPECIALIST_CLAIM_TYPE"
+      ]
+    },
+    {
+      "id": "TC-010",
+      "name": "Complex Inheritance Ruling (Specialist Referral)",
+      "category": "fiqh_specialist_referral",
+      "expected_status": "specialist_referral",
+      "musnad_status": "needs_review",
+      "musnad_passed": false,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": false,
+      "retrieval_count": 0,
+      "explanation": "هذا الادعاء يتعلق بواقعة تاريخية أو نسبة قول لعالم معين أو عزو مصدري؛ يتطلب الرجوع لكتب السير والتراجم والمصادر المخصصة.",
+      "rules_triggered": [
+        "RULE_UNVERIFIED_HISTORICAL_OR_ATTRIBUTION"
+      ]
+    },
+    {
+      "id": "TC-011",
+      "name": "Quran Ayat Al-Kursi Exact Match",
+      "category": "quran_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم العثور على شواهد نصية قوية تسند الادعاء من المصادر المعتمدة.",
+      "rules_triggered": [
+        "RULE_HIGH_SEMANTIC_SUPPORT"
+      ]
+    },
+    {
+      "id": "TC-012",
+      "name": "Quran Surah Al-Asr",
+      "category": "quran_exact_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 3,
+      "explanation": "تم العثور على شواهد نصية قوية تسند الادعاء من المصادر المعتمدة.",
+      "rules_triggered": [
+        "RULE_HIGH_SEMANTIC_SUPPORT"
+      ]
+    },
+    {
+      "id": "TC-013",
+      "name": "Partial Semantic Match on Hadith Meaning",
+      "category": "semantic_match",
+      "expected_status": "supported",
+      "musnad_status": "supported",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": true,
+      "baseline_b_status": "supported",
+      "baseline_b_passed": true,
+      "retrieval_count": 1,
+      "explanation": "تم العثور على شواهد نصية قوية تسند الادعاء من المصادر المعتمدة.",
+      "rules_triggered": [
+        "RULE_HIGH_SEMANTIC_SUPPORT"
+      ]
+    },
+    {
+      "id": "TC-014",
+      "name": "Historical Claim Requiring Verification",
+      "category": "historical_claim",
+      "expected_status": "needs_review",
+      "musnad_status": "insufficient_evidence",
+      "musnad_passed": false,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": false,
+      "retrieval_count": 0,
+      "explanation": "لم نتمكن من إثبات هذا الادعاء من المصادر المتاحة للنظام. هذا لا يعني بالضرورة أن الادعاء خاطئ. يوصى بمراجعته من مختص.",
+      "rules_triggered": [
+        "RULE_NO_EVIDENCE_RETRIEVED"
+      ]
+    },
+    {
+      "id": "TC-015",
+      "name": "Misattributed Scholarly Statement",
+      "category": "attribution_check",
+      "expected_status": "needs_review",
+      "musnad_status": "needs_review",
+      "musnad_passed": true,
+      "baseline_a_status": "supported",
+      "baseline_a_passed": false,
+      "baseline_b_status": "insufficient_evidence",
+      "baseline_b_passed": false,
+      "retrieval_count": 0,
+      "explanation": "هذا الادعاء يتعلق بواقعة تاريخية أو نسبة قول لعالم معين أو عزو مصدري؛ يتطلب الرجوع لكتب السير والتراجم والمصادر المخصصة.",
+      "rules_triggered": [
+        "RULE_UNVERIFIED_HISTORICAL_OR_ATTRIBUTION"
+      ]
+    }
+  ]
+}

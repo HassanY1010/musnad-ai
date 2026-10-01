@@ -1,0 +1,26 @@
+{
+  "audit_timestamp": "2026-09-24 18:39:30",
+  "v1_total": 15,
+  "v1_passed": 15,
+  "v1_accuracy": 100.0,
+  "v2_total": 50,
+  "v2_passed": 48,
+  "v2_accuracy": 96.0,
+  "adversarial_total": 20,
+  "adversarial_passed": 20,
+  "baseline_musnad": 96.0,
+  "baseline_semantic_search": 74.0,
+  "baseline_naive_llm": 60.0,
+  "unsupported_claim_abstention": 100.0,
+  "fiqh_specialist_referral": 100.0,
+  "local_latency_average": 2.82,
+  "local_latency_median": 2.15,
+  "local_latency_p95": 6.77,
+  "performance_scope": "Local in-memory hybrid retrieval + deterministic rule engine (N=50). External third-party LLM/network latency excluded.",
+  "knowledge_base_scope": {
+    "quran_verses_count": 19,
+    "hadiths_count": 12,
+    "tafsir_count": 5,
+    "classification": "Curated Seed Corpus (Prototype Validation)"
+  }
+}

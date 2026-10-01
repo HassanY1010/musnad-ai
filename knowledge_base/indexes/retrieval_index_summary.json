@@ -1,0 +1,15 @@
+{
+  "total_documents": 15426,
+  "bm25_vocabulary_size": 58729,
+  "exact_lookup_size": 15426,
+  "build_time_seconds": 1.4236688613891602,
+  "indexed_sources": [
+    "SRC-001",
+    "SRC-006",
+    "SRC-002",
+    "SRC-003",
+    "SRC-007",
+    "SRC-008",
+    "SRC-009"
+  ]
+}

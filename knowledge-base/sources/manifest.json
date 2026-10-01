@@ -1,0 +1,93 @@
+{
+  "kb_version": "KB-001",
+  "name": "MUSNAD Islamic Knowledge Base",
+  "name_ar": "قاعدة بيانات مُسنَد للمصادر الإسلامية المعتمدة",
+  "description": "Registered and auditable Islamic public domain source manifest for MUSNAD AI evidence retrieval",
+  "sources": [
+    {
+      "source_code": "SRC-001",
+      "title": "The Holy Quran",
+      "title_ar": "القرآن الكريم",
+      "author": "Word of Allah",
+      "author_ar": "كلام الله تعالى",
+      "source_type": "quran",
+      "edition": "Hafs 'an 'Asim (Madinah Mushaf)",
+      "publisher": "King Fahd Complex for Printing the Holy Quran",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Uthmani Script, verified digital recension",
+      "total_chunks_expected": 6236,
+      "status": "active"
+    },
+    {
+      "source_code": "SRC-002",
+      "title": "Sahih al-Bukhari",
+      "title_ar": "صحيح البخاري (الجامع المسند الصحيح)",
+      "author": "Muhammad ibn Ismail al-Bukhari",
+      "author_ar": "الإمام محمد بن إسماعيل البخاري (ت 256 هـ)",
+      "source_type": "hadith",
+      "edition": "Dar Tuwq an-Najah",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Classical Sahih collection, verified chains of transmission (Isnad)",
+      "total_chunks_expected": 7563,
+      "status": "active"
+    },
+    {
+      "source_code": "SRC-003",
+      "title": "Sahih Muslim",
+      "title_ar": "صحيح مسلم (المسند الصحيح)",
+      "author": "Muslim ibn al-Hajjaj al-Naysaburi",
+      "author_ar": "الإمام مسلم بن الحجاج النيسابوري (ت 261 هـ)",
+      "source_type": "hadith",
+      "edition": "Dar Ihya al-Kutub al-Arabiyya",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Classical Sahih collection, verified chains of transmission (Isnad)",
+      "total_chunks_expected": 7500,
+      "status": "active"
+    },
+    {
+      "source_code": "SRC-004",
+      "title": "Sunan Abi Dawud",
+      "title_ar": "سنن أبي داود",
+      "author": "Abu Dawud al-Sijistani",
+      "author_ar": "الإمام أبو داود السجستاني (ت 275 هـ)",
+      "source_type": "hadith",
+      "edition": "Dar ar-Risalah al-Alamiyyah",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Classical Sunan collection",
+      "total_chunks_expected": 5274,
+      "status": "active"
+    },
+    {
+      "source_code": "SRC-005",
+      "title": "Jami at-Tirmidhi",
+      "title_ar": "جامع الترمذي (سنن الترمذي)",
+      "author": "Abu Isa Muhammad at-Tirmidhi",
+      "author_ar": "الإمام أبو عيسى محمد بن عيسى الترمذي (ت 279 هـ)",
+      "source_type": "hadith",
+      "edition": "Dar al-Gharb al-Islami",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Classical Sunan collection with Hadith grading (Hasan, Sahih, Gharib)",
+      "total_chunks_expected": 3956,
+      "status": "active"
+    },
+    {
+      "source_code": "SRC-006",
+      "title": "Al-Arba'in al-Nawawiyya",
+      "title_ar": "الأربعون النووية",
+      "author": "Yahya ibn Sharaf al-Nawawi",
+      "author_ar": "الإمام يحيى بن شرف النووي (ت 676 هـ)",
+      "source_type": "scholarly",
+      "edition": "Dar al-Minhaj",
+      "language": "ar",
+      "license": "Public Domain",
+      "provenance": "Foundational collection of forty comprehensive prophetic traditions",
+      "total_chunks_expected": 42,
+      "status": "active"
+    }
+  ]
+}

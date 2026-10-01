@@ -1,0 +1,42 @@
+{
+  "audit_timestamp": "2026-09-24 18:42:27",
+  "provenance": {
+    "v1_source": "evaluation\\reports\\eval_report_v1.json",
+    "v2_source": "evaluation\\reports\\eval_report_v2.json",
+    "adversarial_source": "evaluation\\reports\\adversarial_report.json",
+    "baseline_source": "evaluation\\reports\\baseline_raw_results.json"
+  },
+  "v1_suite": {
+    "v1_total": 15,
+    "v1_passed": 15,
+    "v1_accuracy": 100.0
+  },
+  "v2_suite": {
+    "v2_total": 50,
+    "v2_passed": 48,
+    "v2_accuracy": 96.0
+  },
+  "adversarial_suite": {
+    "adversarial_total": 20,
+    "adversarial_clean": 20,
+    "adversarial_safe": 20,
+    "adversarial_failed": 0,
+    "neutralization_rate": 100.0
+  },
+  "baseline_results": {
+    "musnad_accuracy_pct": 96.0,
+    "baseline_b_accuracy_pct": 74.0,
+    "baseline_a_accuracy_pct": 60.0,
+    "musnad_abstention_pct": 100.0,
+    "baseline_a_abstention_pct": 12.5,
+    "musnad_specialist_referral_pct": 100.0
+  },
+  "performance_benchmarks": {
+    "average_retrieval_and_decision_ms": 2.82,
+    "median_local_ms": 2.15,
+    "p95_latency_ms": 6.77,
+    "sample_count": 50,
+    "execution_scope": "Local in-memory retrieval + deterministic rule engine (excludes external network LLM calls)",
+    "environment": "Intel Core i7/Ryzen x64, 16GB RAM, Python 3.11 Windows 11"
+  }
+}

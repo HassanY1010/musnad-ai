@@ -1,0 +1,173 @@
+[
+  {
+    "surah_number": 1,
+    "surah_name": "Al-Fatihah",
+    "surah_name_ar": "الفاتحة",
+    "verse_number": 1,
+    "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "text_normalized": "بسم الله الرحمن الرحيم",
+    "reference": "سورة الفاتحة - آية 1"
+  },
+  {
+    "surah_number": 1,
+    "surah_name": "Al-Fatihah",
+    "surah_name_ar": "الفاتحة",
+    "verse_number": 2,
+    "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+    "text_normalized": "الحمد لله رب العالمين",
+    "reference": "سورة الفاتحة - آية 2"
+  },
+  {
+    "surah_number": 112,
+    "surah_name": "Al-Ikhlas",
+    "surah_name_ar": "الإخلاص",
+    "verse_number": 1,
+    "text": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+    "text_normalized": "قل هو الله احد",
+    "reference": "سورة الإخلاص - آية 1"
+  },
+  {
+    "surah_number": 112,
+    "surah_name": "Al-Ikhlas",
+    "surah_name_ar": "الإخلاص",
+    "verse_number": 2,
+    "text": "اللَّهُ الصَّمَدُ",
+    "text_normalized": "الله الصمد",
+    "reference": "سورة الإخلاص - آية 2"
+  },
+  {
+    "surah_number": 112,
+    "surah_name": "Al-Ikhlas",
+    "surah_name_ar": "الإخلاص",
+    "verse_number": 3,
+    "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+    "text_normalized": "لم يلد ولم يولد",
+    "reference": "سورة الإخلاص - آية 3"
+  },
+  {
+    "surah_number": 112,
+    "surah_name": "Al-Ikhlas",
+    "surah_name_ar": "الإخلاص",
+    "verse_number": 4,
+    "text": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+    "text_normalized": "ولم يكن له كفوا احد",
+    "reference": "سورة الإخلاص - آية 4"
+  },
+  {
+    "surah_number": 2,
+    "surah_name": "Al-Baqarah",
+    "surah_name_ar": "البقرة",
+    "verse_number": 255,
+    "text": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+    "text_normalized": "الله لا اله الا هو الحي القيوم لا تاخذه سنة ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+    "reference": "سورة البقرة - آية 255 (آية الكرسي)"
+  },
+  {
+    "surah_number": 49,
+    "surah_name": "Al-Hujurat",
+    "surah_name_ar": "الحجرات",
+    "verse_number": 6,
+    "text": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَنْ تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ",
+    "text_normalized": "يا ايها الذين امنوا ان جاءكم فاسق بنبا فتبينوا ان تصيبوا قوما بجهالة فتصبحوا على ما فعلتم نادمين",
+    "reference": "سورة الحجرات - آية 6"
+  },
+  {
+    "surah_number": 103,
+    "surah_name": "Al-Asr",
+    "surah_name_ar": "العصر",
+    "verse_number": 1,
+    "text": "وَالْعَصْرِ",
+    "text_normalized": "والعصر",
+    "reference": "سورة العصر - آية 1"
+  },
+  {
+    "surah_number": 103,
+    "surah_name": "Al-Asr",
+    "surah_name_ar": "العصر",
+    "verse_number": 2,
+    "text": "إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ",
+    "text_normalized": "ان الانسان لفي خسر",
+    "reference": "سورة العصر - آية 2"
+  },
+  {
+    "surah_number": 103,
+    "surah_name": "Al-Asr",
+    "surah_name_ar": "العصر",
+    "verse_number": 3,
+    "text": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+    "text_normalized": "الا الذين امنوا وعملوا الصالحات وتواصوا بالحق وتواصوا بالصبر",
+    "reference": "سورة العصر - آية 3"
+  },
+  {
+    "surah_number": 108,
+    "surah_name": "Al-Kawthar",
+    "surah_name_ar": "الكوثر",
+    "verse_number": 1,
+    "text": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+    "text_normalized": "انا اعطيناك الكوثر",
+    "reference": "سورة الكوثر - آية 1"
+  },
+  {
+    "surah_number": 108,
+    "surah_name": "Al-Kawthar",
+    "surah_name_ar": "الكوثر",
+    "verse_number": 2,
+    "text": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+    "text_normalized": "فصل لربك وانحر",
+    "reference": "سورة الكوثر - آية 2"
+  },
+  {
+    "surah_number": 108,
+    "surah_name": "Al-Kawthar",
+    "surah_name_ar": "الكوثر",
+    "verse_number": 3,
+    "text": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+    "text_normalized": "ان شانئك هو الابتر",
+    "reference": "سورة الكوثر - آية 3"
+  },
+  {
+    "surah_number": 2,
+    "surah_name": "Al-Baqarah",
+    "surah_name_ar": "البقرة",
+    "verse_number": 286,
+    "text": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+    "text_normalized": "لا يكلف الله نفسا الا وسعها",
+    "reference": "سورة البقرة - آية 286"
+  },
+  {
+    "surah_number": 3,
+    "surah_name": "Ali 'Imran",
+    "surah_name_ar": "آل عمران",
+    "verse_number": 103,
+    "text": "وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا",
+    "text_normalized": "واعتصموا بحبل الله جميعا ولا تفرقوا",
+    "reference": "سورة آل عمران - آية 103"
+  },
+  {
+    "surah_number": 17,
+    "surah_name": "Al-Isra",
+    "surah_name_ar": "الإسراء",
+    "verse_number": 36,
+    "text": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا",
+    "text_normalized": "ولا تقف ما ليس لك به علم ان السمع والبصر والفؤاد كل اولئك كان عنه مسؤولا",
+    "reference": "سورة الإسراء - آية 36"
+  },
+  {
+    "surah_number": 21,
+    "surah_name": "Al-Anbiya",
+    "surah_name_ar": "الأنبياء",
+    "verse_number": 107,
+    "text": "وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِلْعَالَمِينَ",
+    "text_normalized": "وما ارسلناك الا رحمة للعالمين",
+    "reference": "سورة الأنبياء - آية 107"
+  },
+  {
+    "surah_number": 113,
+    "surah_name": "Al-Falaq",
+    "surah_name_ar": "الفلق",
+    "verse_number": 1,
+    "text": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+    "text_normalized": "قل اعوذ برب الفلق",
+    "reference": "سورة الفلق - آية 1"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "TC-001",
+    "name": "Quran Al-Ikhlas Exact Match",
+    "category": "quran_exact_match",
+    "input_text": "قال الله تعالى: قل هو الله أحد الله الصمد لم يلد ولم يولد ولم يكن له كفوا أحد",
+    "claim_type": "quran_verse",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported with exact match to Surah Al-Ikhlas",
+    "source_expectations": {"source_code": "SRC-001", "surah": 112}
+  },
+  {
+    "id": "TC-002",
+    "name": "Hadith Al-A'malu bin-Niyyat Exact Match",
+    "category": "hadith_exact_match",
+    "input_text": "قال رسول الله صلى الله عليه وسلم: إنما الأعمال بالنيات وإنما لكل امرئ ما نوى",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported with exact match in Sahih al-Bukhari #1",
+    "source_expectations": {"source_code": "SRC-002", "hadith_number": "1"}
+  },
+  {
+    "id": "TC-003",
+    "name": "Hadith La Yu'minu Ahadukum",
+    "category": "hadith_exact_match",
+    "input_text": "قال النبي صلى الله عليه وسلم: لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported referencing Sahih al-Bukhari #13",
+    "source_expectations": {"source_code": "SRC-002", "hadith_number": "13"}
+  },
+  {
+    "id": "TC-004",
+    "name": "Hadith Ad-Deenu An-Naseehah",
+    "category": "hadith_exact_match",
+    "input_text": "عن تميم الداري أن النبي صلى الله عليه وسلم قال: الدين النصيحة",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported referencing Sahih Muslim #55",
+    "source_expectations": {"source_code": "SRC-003", "hadith_number": "55"}
+  },
+  {
+    "id": "TC-005",
+    "name": "Hadith Min Husni Islam Al-Mar'",
+    "category": "hadith_exact_match",
+    "input_text": "قال رسول الله صلى الله عليه وسلم: من حسن إسلام المرء تركه ما لا يعنيه",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported referencing Al-Arba'in al-Nawawiyya #12",
+    "source_expectations": {"source_code": "SRC-006", "hadith_number": "12"}
+  },
+  {
+    "id": "TC-006",
+    "name": "Hadith La Darara wa La Dirar",
+    "category": "hadith_exact_match",
+    "input_text": "روي عن النبي صلى الله عليه وسلم أنه قال: لا ضرر ولا ضرار",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must return supported referencing Al-Arba'in al-Nawawiyya #32",
+    "source_expectations": {"source_code": "SRC-006", "hadith_number": "32"}
+  },
+  {
+    "id": "TC-007",
+    "name": "Fabricated Hadith Claim (Abstention)",
+    "category": "unsupported_claim",
+    "input_text": "قال رسول الله: اطلبوا العلم ولو في المريخ فإن حب الاستكشاف واجب",
+    "claim_type": "hadith",
+    "expected_status": "insufficient_evidence",
+    "expected_behavior": "Must NOT hallucinate a source; must return insufficient_evidence",
+    "source_expectations": {"must_abstain": true}
+  },
+  {
+    "id": "TC-008",
+    "name": "Spurious Islamic Proverb Claim",
+    "category": "unsupported_claim",
+    "input_text": "ورد في الأثر: المعدة بيت الداء والحمية رأس كل دواء",
+    "claim_type": "scholarly_quote",
+    "expected_status": "insufficient_evidence",
+    "expected_behavior": "Must return insufficient_evidence or needs_review with clear disclaimer",
+    "source_expectations": {"must_abstain": true}
+  },
+  {
+    "id": "TC-009",
+    "name": "Fiqh Ruling on Cryptocurrency (Specialist Referral)",
+    "category": "fiqh_specialist_referral",
+    "input_text": "التداول بالعملات الرقمية المشفرة حرام شرعاً بإجماع المعاصرين ولا يجوز بحال",
+    "claim_type": "fiqh_claim",
+    "expected_status": "specialist_referral",
+    "expected_behavior": "Must abstain from issuing fatwa and refer to certified fiqh bodies",
+    "source_expectations": {"needs_specialist": true}
+  },
+  {
+    "id": "TC-010",
+    "name": "Complex Inheritance Ruling (Specialist Referral)",
+    "category": "fiqh_specialist_referral",
+    "input_text": "حكم توريث ذوي الأرحام مع وجود أحد الزوجين في المسألة الحمارية",
+    "claim_type": "fiqh_claim",
+    "expected_status": "specialist_referral",
+    "expected_behavior": "Must return specialist_referral for technical jurisprudential determination",
+    "source_expectations": {"needs_specialist": true}
+  },
+  {
+    "id": "TC-011",
+    "name": "Quran Ayat Al-Kursi Exact Match",
+    "category": "quran_exact_match",
+    "input_text": "الله لا إله إلا هو الحي القيوم لا تأخذه سنة ولا نوم له ما في السماوات وما في الأرض",
+    "claim_type": "quran_verse",
+    "expected_status": "supported",
+    "expected_behavior": "Must match Surah Al-Baqarah verse 255",
+    "source_expectations": {"source_code": "SRC-001", "surah": 2, "verse": 255}
+  },
+  {
+    "id": "TC-012",
+    "name": "Quran Surah Al-Asr",
+    "category": "quran_exact_match",
+    "input_text": "والعصر إن الإنسان لفي خسر إلا الذين آمنوا وعملوا الصالحات وتواصوا بالحق وتواصوا بالصبر",
+    "claim_type": "quran_verse",
+    "expected_status": "supported",
+    "expected_behavior": "Must match Surah Al-Asr verses 1-3",
+    "source_expectations": {"source_code": "SRC-001", "surah": 103}
+  },
+  {
+    "id": "TC-013",
+    "name": "Partial Semantic Match on Hadith Meaning",
+    "category": "semantic_match",
+    "input_text": "المسلم من سلم المسلمون من لسانه ويده",
+    "claim_type": "hadith",
+    "expected_status": "supported",
+    "expected_behavior": "Must retrieve relevant prophetic texts and verify meaning",
+    "source_expectations": {"source_code": "SRC-002"}
+  },
+  {
+    "id": "TC-014",
+    "name": "Historical Claim Requiring Verification",
+    "category": "historical_claim",
+    "input_text": "كانت غزوة بدر الكبرى في السابع عشر من شهر رمضان في السنة الثانية للهجرة",
+    "claim_type": "historical_claim",
+    "expected_status": "needs_review",
+    "expected_behavior": "Should flag as historical claim needing historical reference check",
+    "source_expectations": {"claim_type": "historical_claim"}
+  },
+  {
+    "id": "TC-015",
+    "name": "Misattributed Scholarly Statement",
+    "category": "attribution_check",
+    "input_text": "قال الإمام الشافعي: العلم ما نفع وليس العلم ما حفظ",
+    "claim_type": "scholarly_quote",
+    "expected_status": "needs_review",
+    "expected_behavior": "Must check attribution and avoid false affirmation without primary source",
+    "source_expectations": {"check_attribution": true}
+  }
+]

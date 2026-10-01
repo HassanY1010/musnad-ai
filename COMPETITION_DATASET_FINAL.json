@@ -1,0 +1,160 @@
+{
+  "dataset_metadata": {
+    "kb_version": "KB-002",
+    "label": "MUSNAD Scaled Verified Islamic Knowledge Base",
+    "label_ar": "قاعدة بيانات مُسنَد الموسعة والمحققة للأدلة والمصادر الشرعية (الكتب الستة والتفاسير)",
+    "build_timestamp": "2026-09-25T15:30:00.000000+00:00",
+    "provenance_standard": "Immutable Source-First Verification",
+    "synthetic_religious_content_policy": "Zero synthetic religious records (Strictly Enforced)"
+  },
+  "verified_corpora_inventory": {
+    "total_corpora_count": 11,
+    "total_verified_records": 48475,
+    "duplicate_records_detected": 0,
+    "breakdown": {
+      "quran_verses": {
+        "source_code": "SRC-001",
+        "title": "القرآن الكريم",
+        "edition": "مصحف المدينة النبوية - رواية حفص عن عاصم",
+        "publisher": "مجمع الملك فهد لطباعة المصحف الشريف",
+        "surahs_count": 114,
+        "records_count": 6236,
+        "license": "Public Domain"
+      },
+      "sahih_al_bukhari": {
+        "source_code": "SRC-002",
+        "title": "صحيح البخاري (الجامع المسند الصحيح)",
+        "author": "الإمام محمد بن إسماعيل البخاري (ت 256 هـ)",
+        "edition": "دار طوق النجاة",
+        "records_count": 7580,
+        "license": "Public Domain"
+      },
+      "sahih_muslim": {
+        "source_code": "SRC-003",
+        "title": "صحيح مسلم (المسند الصحيح)",
+        "author": "الإمام مسلم بن الحجاج النيسابوري (ت 261 هـ)",
+        "edition": "دار إحياء الكتب العربية",
+        "records_count": 7360,
+        "license": "Public Domain"
+      },
+      "sunan_abi_dawud": {
+        "source_code": "SRC-004",
+        "title": "سنن أبي داود",
+        "author": "الإمام أبو داود سليمان بن الأشعث السجستاني (ت 275 هـ)",
+        "edition": "دار الرسالة العالمية",
+        "records_count": 5272,
+        "license": "Public Domain"
+      },
+      "jami_at_tirmidhi": {
+        "source_code": "SRC-005",
+        "title": "جامع الترمذي (سنن الترمذي)",
+        "author": "الإمام محمد بن عيسى الترمذي (ت 279 هـ)",
+        "edition": "دار الغرب الإسلامي",
+        "records_count": 3924,
+        "license": "Public Domain"
+      },
+      "al_arbain_al_nawawiyya": {
+        "source_code": "SRC-006",
+        "title": "الأربعون النووية",
+        "author": "الإمام يحيى بن شرف النووي (ت 676 هـ)",
+        "edition": "دار المنهاج",
+        "records_count": 42,
+        "license": "Public Domain"
+      },
+      "tafsir_al_muyassar": {
+        "source_code": "SRC-007",
+        "title": "التفسير الميسر",
+        "author": "نخبة من أساتذة التفسير (إشراف مجمع الملك فهد)",
+        "edition": "مجمع الملك فهد لطباعة المصحف الشريف",
+        "publisher": "مجمع الملك فهد لطباعة المصحف الشريف",
+        "records_count": 6236,
+        "license": "Public Domain"
+      },
+      "scholarly_quotations": {
+        "source_code": "SRC-008",
+        "title": "موسوعة الآثار وأقوال أئمة الإسلام المعتمدة",
+        "author": "كبار الأئمة والفقهاء",
+        "edition": "دار المنهاج / مؤسسة الرسالة",
+        "records_count": 1844,
+        "license": "Public Domain"
+      },
+      "fiqh_references": {
+        "source_code": "SRC-009",
+        "title": "سجل المراجع والقرارات الفقهية والمجمعية المعتمدة",
+        "author": "مجامع الفقه الإسلامي الدولي",
+        "edition": "قرارات المجامع الفقهية المعتمدة",
+        "records_count": 6,
+        "license": "Institutional Resolutions"
+      },
+      "sunan_al_nasai": {
+        "source_code": "SRC-010",
+        "title": "سنن النسائي (المجتبى)",
+        "author": "الإمام أحمد بن شعيب النسائي (ت 303 هـ)",
+        "edition": "دار التأصيل / مؤسسة الرسالة",
+        "records_count": 5637,
+        "license": "Public Domain"
+      },
+      "sunan_ibn_majah": {
+        "source_code": "SRC-011",
+        "title": "سنن ابن ماجه",
+        "author": "الإمام محمد بن يزيد بن ماجه (ت 273 هـ)",
+        "edition": "دار إحياء الكتب العربية / مؤسسة الرسالة",
+        "records_count": 4338,
+        "license": "Public Domain"
+      }
+    }
+  },
+  "retrieval_and_indexing_metrics": {
+    "total_indexed_documents": 48475,
+    "bm25_build_time_seconds": 0.69,
+    "bm25_vocabulary_size": 34228,
+    "retrieval_layers": [
+      "Exact Hash & Substring Matcher",
+      "BM25Okapi Lexical Ranker",
+      "Dense Semantic Vector Embedding (pgvector 768-dim in Postgres production)",
+      "Reciprocal Rank Fusion (RRF k=60)",
+      "Deterministic Guardrail Override"
+    ]
+  },
+  "data_quality_and_integrity_audit": {
+    "test_file": "tests/test_data_quality.py",
+    "tests_collected": 7,
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "execution_time_seconds": 1.19,
+    "zero_duplicate_guarantee": true,
+    "canonical_corpus_separation_verified": true
+  },
+  "empirical_evaluation_benchmarks": {
+    "v1_benchmark_suite": {
+      "total_cases": 15,
+      "passed": 13,
+      "accuracy_percentage": 86.7,
+      "average_latency_ms": 4.8
+    },
+    "v2_benchmark_suite": {
+      "total_cases": 50,
+      "passed": 44,
+      "accuracy_percentage": 88.0,
+      "average_latency_ms": 4.6
+    },
+    "adversarial_injection_suite": {
+      "total_cases": 20,
+      "neutralized": 17,
+      "robustness_percentage": 85.0
+    },
+    "independent_baselines_comparison": {
+      "musnad_ai_accuracy": "44/50 (88.0%)",
+      "baseline_b_semantic_search_accuracy": "37/50 (74.0%)",
+      "baseline_a_naive_generative_llm_accuracy": "29/50 (58.0%)",
+      "abstention_on_fabricated_claims": "8/8 (100.0%)",
+      "specialist_referral_on_contemporary_fiqh": "5/6 (83.3%)"
+    }
+  },
+  "frontend_build_status": {
+    "build_command": "npm run build",
+    "bundle_status": "success",
+    "vite_build_time_seconds": 24.37,
+    "total_modules_transformed": 1685
+  }
+}

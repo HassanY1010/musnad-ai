@@ -1,0 +1,87 @@
+{
+  "dataset_version": "KB-002",
+  "kb_label": "MUSNAD Scaled Verified Knowledge Base",
+  "kb_label_ar": "قاعدة بيانات مسند الموسعة للمصادر الإسلامية الموثقة",
+  "build_timestamp": "2026-09-24T16:02:07.192849+00:00",
+  "total_corpora_count": 7,
+  "total_records": 15426,
+  "sources": [
+    {
+      "source_code": "SRC-001",
+      "type": "quran",
+      "title": "القرآن الكريم",
+      "title_en": "The Holy Quran",
+      "record_count": 6236,
+      "file": "knowledge_base\\v0.2_expanded\\quran\\quran_canonical.json",
+      "file_sha256": "3b6e08397a8d975650a03a0ed01c96e47fae7893aa8f9ba47385eee1ccb9c03f",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-006",
+      "type": "hadith",
+      "title": "الأربعون النووية",
+      "title_en": "Al-Arba'in al-Nawawiyya",
+      "record_count": 42,
+      "file": "knowledge_base\\v0.2_expanded\\hadith\\nawawi40.json",
+      "file_sha256": "8603084544c628f9e3973894fbbfe2b1ba141d406d7d46891ed697290ef9c662",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-002",
+      "type": "hadith",
+      "title": "صحيح البخاري (الجامع المسند الصحيح)",
+      "title_en": "Sahih al-Bukhari",
+      "record_count": 1500,
+      "file": "knowledge_base\\v0.2_expanded\\hadith\\bukhari.json",
+      "file_sha256": "9d0517b36c2548f332689debcb2f8a8b60296da92ee95b3fe733549f30050eda",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-003",
+      "type": "hadith",
+      "title": "صحيح مسلم (المسند الصحيح)",
+      "title_en": "Sahih Muslim",
+      "record_count": 1391,
+      "file": "knowledge_base\\v0.2_expanded\\hadith\\muslim.json",
+      "file_sha256": "6900696d9f387cf8912690f7929f90b6e2c687f8c2685fb5dada7c191658e4bb",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-007",
+      "type": "tafsir",
+      "title": "التفسير الميسر",
+      "title_en": "Tafsir al-Muyassar",
+      "record_count": 6236,
+      "file": "knowledge_base\\v0.2_expanded\\tafsir\\tafsir_muyassar.json",
+      "file_sha256": "801ae38d8db4e2ce4bc73c1040e5e22e02419baf73ff95693102b6d7a3c91ea4",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-008",
+      "type": "scholarly",
+      "title": "موسوعة الآثار وأقوال أئمة الإسلام المعتمدة",
+      "title_en": "Classical Scholarly Quotations & Athar",
+      "record_count": 15,
+      "file": "knowledge_base\\v0.2_expanded\\scholarly\\scholarly_quotes.json",
+      "file_sha256": "c5d77ce78ca5649e9fc9c044014dc871d2408cdc560c3fb6f16e7d1023ebabbd",
+      "license": "Public Domain",
+      "verification_status": "verified"
+    },
+    {
+      "source_code": "SRC-009",
+      "type": "fiqh",
+      "title": "سجل المراجع والقرارات الفقهية والمجمعية المعتمدة",
+      "title_en": "Source-Backed Fiqh References & Academy Resolutions",
+      "record_count": 6,
+      "file": "knowledge_base\\v0.2_expanded\\fiqh\\fiqh_references.json",
+      "file_sha256": "b0e3ad5fab913c2d1c48478bd29f28b37c61dd5ca04f0c7cf2907a97ebe9e8c8",
+      "license": "Public Domain / Institutional Decisions",
+      "verification_status": "verified"
+    }
+  ]
+}
