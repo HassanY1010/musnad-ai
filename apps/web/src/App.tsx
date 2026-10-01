@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { AuthGuard, GuestGuard } from './components/layout/AuthGuard';
 import { LandingPage } from './pages/LandingPage';
@@ -13,8 +13,7 @@ import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
+    <AuthProvider>
         <Routes>
           {/* Public Routes (Guest Only) */}
           <Route element={<GuestGuard />}>
@@ -35,7 +34,6 @@ function App() {
         </Routes>
         <Toaster position="top-center" toastOptions={{ style: { background: 'var(--color-bg-elevated)', color: '#fff', border: '1px solid var(--color-border)' } }} />
       </AuthProvider>
-    </BrowserRouter>
   );
 }
 
