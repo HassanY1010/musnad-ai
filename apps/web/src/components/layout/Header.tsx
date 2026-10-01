@@ -1,13 +1,15 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Shield, BookOpen, AlertTriangle, CheckCircle, Database } from 'lucide-react'
+import { Shield } from 'lucide-react'
+import { useAuth } from '../../contexts/AuthContext'
 
-export default function Header() {
+export const Header = () => {
   const location = useLocation()
+  const { user, logout } = useAuth()
 
   const navLinks = [
-    { to: '/', label: 'الرئيسية والتحقق' },
-    { to: '/sources', label: 'المصادر وقاعدة المعرفة' },
-    { to: '/limitations', label: 'حدود النموذج والشفافية' },
+    { to: '/', label: 'الرئيسية' },
+    { to: '/sources', label: 'قاعدة المعرفة' },
+    { to: '/limitations', label: 'الشفافية' },
   ]
 
   return (
@@ -75,63 +77,60 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Center / Right Navigation */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {navLinks.map((link) => {
-              const isActive = location.pathname === link.to
-              return (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  style={{
-                    padding: '8px 18px',
-                    borderRadius: '10px',
-                    textDecoration: 'none',
-                    fontSize: '0.92rem',
-                    fontWeight: isActive ? 700 : 500,
-                    color: isActive ? '#FFFFFF' : 'var(--color-text-secondary)',
-                    backgroundColor: isActive ? 'rgba(16, 185, 129, 0.18)' : 'transparent',
-                    border: isActive ? '1px solid rgba(16, 185, 129, 0.4)' : '1px solid transparent',
-                    boxShadow: isActive ? '0 0 14px rgba(16, 185, 129, 0.15)' : 'none',
-                    transition: 'all 0.2s ease',
-                  }}
-                >
-                  {link.label}
-                </Link>
-              )
-            })}
-          </nav>
+        {/* Center Navigation */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          {navLinks.map((link) => {
+            const isActive = location.pathname === link.to
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                style={{
+                  padding: '8px 18px',
+                  borderRadius: '10px',
+                  textDecoration: 'none',
+                  fontSize: '0.92rem',
+                  fontWeight: isActive ? 700 : 500,
+                  color: isActive ? '#FFFFFF' : 'var(--color-text-secondary)',
+                  backgroundColor: isActive ? 'rgba(16, 185, 129, 0.18)' : 'transparent',
+                  border: isActive ? '1px solid rgba(16, 185, 129, 0.4)' : '1px solid transparent',
+                  boxShadow: isActive ? '0 0 14px rgba(16, 185, 129, 0.15)' : 'none',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
+        </nav>
 
-          {/* Engine Status Badge */}
-          <div
-            style={{
-              display: 'none', // Shown on desktop via media or inline
-              alignItems: 'center',
-              gap: '8px',
-              padding: '6px 12px',
-              borderRadius: '999px',
-              backgroundColor: 'rgba(16, 185, 129, 0.08)',
-              border: '1px solid rgba(16, 185, 129, 0.25)',
-              fontSize: '0.78rem',
-              color: 'var(--color-primary-bright)',
-              fontWeight: 600,
-            }}
-            className="engine-status-pill"
-          >
-            <div
-              style={{
-                width: '7px',
-                height: '7px',
-                borderRadius: '50%',
-                backgroundColor: '#10B981',
-                boxShadow: '0 0 8px #10B981',
-              }}
-            />
-            <span>المحرك نشط (KB-002)</span>
-          </div>
+        {/* Right Auth Section */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          {user ? (
+            <>
+              <span style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+                {user.name}
+              </span>
+              <Link to="/app" className="btn btn-primary btn-sm">
+                لوحة التحكم
+              </Link>
+              <button onClick={logout} className="btn btn-ghost btn-sm" style={{ color: 'var(--color-conflict)' }}>
+                خروج
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="btn btn-ghost btn-sm">
+                دخول
+              </Link>
+              <Link to="/register" className="btn btn-primary btn-sm">
+                إنشاء حساب
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>
   )
 }
+

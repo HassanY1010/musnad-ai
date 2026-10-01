@@ -96,3 +96,33 @@ export interface SourceItem {
   kb_version: string
   chunk_count: number
 }
+
+// Authentication Types
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  created_at: string;
+}
+
+export interface AuthResponse {
+  success: boolean;
+  data: {
+    access_token: string;
+    role: string;
+    user_id: string;
+  };
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface RegisterRequest {
+  name: string;
+  email: string;
+  password: string;
+}

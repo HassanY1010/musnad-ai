@@ -12,6 +12,28 @@ const apiClient = axios.create({
   timeout: 30000,
 })
 
+export const api = apiClient;
+
+// Setup auth token interceptor
+export const setAuthToken = (token: string | null) => {
+  if (token) {
+    apiClient.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+  } else {
+    delete apiClient.defaults.headers.common['Authorization'];
+  }
+};
+
+apiClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('token');
+      setAuthToken(null);
+    }
+    return Promise.reject(error);
+  }
+);
+
 export async function createAnalysis(content: string): Promise<AnalysisResult> {
   try {
     const response = await apiClient.post<{ success: boolean; data: AnalysisResult }>('/analyses', {
