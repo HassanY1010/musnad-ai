@@ -276,7 +276,7 @@ class HybridRetriever:
                 .join(Source, SourceChunk.source_id == Source.id)
                 .where(
                     and_(
-                        Source.status.in_(['ACTIVE', 'active']),
+                        Source.status == SourceStatus.ACTIVE,
                         *source_filter,
                         or_(*conditions),
                     )
