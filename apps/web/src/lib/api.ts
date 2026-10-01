@@ -2,7 +2,7 @@ import axios from 'axios'
 import type { AnalysisResult, SourceItem } from '@/types'
 
 // Use explicit backend URL or relative /api/v1 if proxied
-const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api/v1'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://musnad-ai.onrender.com/api/v1'
 
 const apiClient = axios.create({
   baseURL: API_BASE,
